@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    tools:context="com.jdssale.LoginActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="180dp" />
+
+
+    <EditText
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:inputType="textEmailAddress"
+        android:id="@+id/et_email"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/colorBrown"
+        android:hint="Email"
+        android:background="@drawable/round_cor_emp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:inputType="textPassword"
+        android:id="@+id/et_pwd"
+        android:textSize="14sp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/colorBrown"
+        android:hint="Password"
+        android:background="@drawable/round_cor_emp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:textSize="18sp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:text="LOGIN"
+        android:background="@drawable/round_cor_fil"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tv_forgot"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg_2"
+    tools:context="com.jdssale.PendingListActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:gravity="top"
+        android:background="@drawable/inside_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <LinearLayout
+            android:id="@+id/ll_toolbar"
+            android:background="@drawable/inside_top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <include layout="@layout/toolbar"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_margin="7dp"
+            android:weightSum="3"
+            android:padding="3dp"
+            android:background="@drawable/search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingLeft="4dp"
+                android:textColor="@color/colorBlack"
+                android:hint="Search"
+                android:layout_weight="2.6"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:background="@drawable/search_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/search_icon_3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_pending"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

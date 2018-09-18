@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/dot_line"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_quotation"
+            android:icon="@drawable/dot_line"
+            android:title="Quotation" />
+        <item
+            android:id="@+id/nav_sale"
+            android:icon="@drawable/dot_line"
+            android:title="Sale" />
+        <item
+            android:id="@+id/nav_pend_pay"
+            android:icon="@drawable/dot_line"
+            android:title="Pending Payment" />
+        <item
+            android:id="@+id/nav_pay_history"
+            android:icon="@drawable/dot_line"
+            android:title="Payment History" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/dot_line"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_2"
+    tools:context="com.jdssale.SubCategoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:gravity="top"
+        android:background="@drawable/inside_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <LinearLayout
+            android:id="@+id/ll_toolbar"
+            android:background="@drawable/inside_top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <include layout="@layout/toolbar"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_margin="7dp"
+            android:weightSum="3"
+            android:padding="3dp"
+            android:background="@drawable/search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+            <EditText
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/et_search"
+                android:paddingLeft="4dp"
+                android:textColor="@color/colorBlack"
+                android:hint="Search"
+                android:layout_weight="2.6"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:background="@drawable/search_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/search_icon_3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_head"
+        android:background="@color/actionbar_opacity"
+        android:padding="2dp"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:text="+ ADD QUOTATION"
+        android:layout_below="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_shop"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:text="SHOP BY CATEGORY"
+        android:layout_below="@+id/tv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:padding="5dp"
+        android:background="@color/actionbar_opacity"
+        android:id="@+id/rv_sub"
+        android:layout_below="@+id/tv_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/rv_items"
+        android:layout_above="@+id/ll_button"
+        android:layout_below="@+id/rv_sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_home"
+            android:layout_marginRight="0.5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@color/buttoncolor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_home"
+                android:adjustViewBounds="true"
+                android:src="@drawable/home"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/iv_home"
+                android:layout_centerVertical="true"
+                android:text="HOME"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_cart"
+            android:layout_marginLeft="0.5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@color/buttoncolor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_cart"
+                android:adjustViewBounds="true"
+                android:src="@drawable/cart_icon"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_cart"
+                android:id="@+id/tv_count"
+                android:text="ITEMS"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">JDS Sale</string>
+    <string name="app_driver">JDS Driver</string>
+    <string name="host_internet">No Internet Connection</string>
+    <string name="go_to_settings">Go To Settings</string>
+    <string name="retry">Please Retry</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_driver">DriverActivity</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>List View/ Map View</item>
+        <item>Pending Payment</item>
+        <item>Payment History</item>
+        <item>Logout</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

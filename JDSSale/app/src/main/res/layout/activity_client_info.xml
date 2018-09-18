@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.jdssale.ClientInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:background="@color/navy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <include layout="@layout/toolbar_driver"></include>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_below="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:background="@drawable/client"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/layoutTop" >
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cv_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/colorGray"
+            android:layout_above="@id/layoutBottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-50dp"
+        />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Billa SINGH"
+            android:id="@+id/tv_cname"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_st"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:src="@drawable/locicon"
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tv_cloc"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:src="@drawable/callicon"
+                android:id="@+id/iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tv_ccall"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:src="@drawable/mailicon"
+                android:id="@+id/iv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tv_cmail"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:background="@android:color/transparent"
+            android:id="@+id/layoutTop1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" >
+        </RelativeLayout>
+
+        <RelativeLayout
+
+
+            android:id="@+id/layoutBottom1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/layoutTop1" >
+
+            <RelativeLayout
+                android:id="@+id/rl_text"
+                android:background="@color/navy"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            <TextView
+                android:text="PENDING INVOICE/BILL"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/circle_navy"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu_share"
+            android:id="@+id/rl_down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_above="@id/layoutBottom1"
+            android:layout_marginBottom="-25dp" >
+
+            <ImageView
+                android:src="@drawable/downicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:visibility="gone"
+            android:id="@+id/rl_recyler"
+            android:layout_below="@+id/layoutBottom1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:fitsSystemWindows="true"
+                android:id="@+id/rv_pending"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

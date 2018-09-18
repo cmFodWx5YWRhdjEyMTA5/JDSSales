@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/d_pay_list"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/list_icon"
+            android:title="List View/Map View" />
+        <item
+            app:actionViewClass="android.widget.TextView"
+            android:id="@+id/d_pending_pay"
+            android:icon="@drawable/potli_icon"
+            android:title="Pending Payment" />
+        <item
+            app:actionViewClass="android.widget.TextView"
+            android:id="@+id/d_pay_history"
+            android:icon="@drawable/money_icon"
+            android:title="Payment History" />
+        <item
+            app:actionViewClass="android.widget.TextView"
+            android:id="@+id/d_logout"
+            android:icon="@drawable/dlog_icon"
+            android:title="Logout" />
+    </group>
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#323232</color>
+    <color name="colorPrimaryDark">#323232</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="driver">#81c7b8</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="navy">#212C37</color>
+    <color name="colorline">#5A5A5A</color>
+    <color name="colorBrown">#5E150C</color>
+    <color name="divider">#323232</color>
+    <color name="colorStatus">#F2E8C0</color>
+    <color name="brown_light">#D04A4A</color>
+    <color name="colorGray">#808080</color>
+    <color name="colorRed">#EC0025</color>
+    <color name="light">#f1f1f1</color>
+    <color name="gray_st">#b9b9b9</color>
+    <color name="buttoncolor">#E45057</color>
+    <color name="actionbar_opacity">#33000000</color>
+    <color name="green">#26972C</color>
+    <color name="map_line">#00B4F9</color>
+</resources>

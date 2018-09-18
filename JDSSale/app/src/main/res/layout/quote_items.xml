@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:background="@drawable/corner_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/circle"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_image"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="2.4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:textSize="11sp"
+                        android:id="@+id/tv_quat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Reference No."
+                        android:textColor="@color/buttoncolor" />
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_single"
+                            android:textSize="10sp"
+                            android:text="Single Quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <com.jdssale.Utilities.QuantityView
+                            android:layout_below="@+id/tv_single"
+                            android:id="@+id/qv_item"
+                            app:qv_quantityDialog="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            app:qv_addButtonBackground="@drawable/quantity"
+                            app:qv_addButtonTextColor="@color/colorWhite"
+                            app:qv_quantity="20"
+                            app:qv_removeButtonBackground="@drawable/quantity"
+                            app:qv_removeButtonTextColor="@color/colorWhite" />
+
+                        <TextView
+                            android:layout_marginLeft="23dp"
+                            android:layout_toRightOf="@+id/tv_single"
+                            android:id="@+id/tv_carton"
+                            android:textSize="10sp"
+                            android:text="Carton Quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.jdssale.Utilities.QuantityView
+                            app:qv_quantityDialog="false"
+                            android:layout_marginLeft="20dp"
+                            android:layout_below="@+id/tv_carton"
+                            android:layout_toRightOf="@+id/qv_item"
+                            android:id="@+id/qv_carton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            app:qv_addButtonBackground="@drawable/quantity"
+                            app:qv_addButtonTextColor="@color/colorWhite"
+                            app:qv_quantity="20"
+                            app:qv_removeButtonBackground="@drawable/quantity"
+                            app:qv_removeButtonTextColor="@color/colorWhite" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:textSize="11sp"
+                    android:layout_weight="0.6"
+                    android:id="@+id/tv_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/colorBlack" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_promo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="eeeeeff"
+                    android:textColor="@color/gray_st" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_promo"
+                    android:id="@+id/tv_price_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="eeeeeff"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_remove"
+                    android:textSize="10sp"
+                    android:textAllCaps="true"
+                    android:text="Remove"
+                    android:padding="7dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/quantity"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
